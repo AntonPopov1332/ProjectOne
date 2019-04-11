@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en=US">
+
+<head>
+
+        <link rel="stylesheet" type="text/css" href="C:\Users\admin\Desktop\website\css\lightbox.min.css">
+        <script type="text/javascript" src="C:\Users\admin\Desktop\website\js\lightbox-plus-jquery.min.js"></script>
+        <link href="C:\Users\admin\Desktop\website\css\style.css" rel="stylesheet" type="text/css">
+
+<script>
+            // When the user scrolls down 20px from the top of the document, show the button
+           window.onscroll = function() {scrollFunction()};
+           
+           function scrollFunction() {
+                 if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                   document.getElementById("myBtn").style.display = "block";
+                 } 
+                 else {
+                   document.getElementById("myBtn").style.display = "none";
+                 }
+           }
+               
+               // When the user clicks on the button, scroll to the top of the document
+           function topFunction() {
+                 document.body.scrollTop = 0;
+                 document.documentElement.scrollTop = 0;
+           }
+</script>
+
+<meta charset="UTF-8">
+
+</head>
+
+<body>
+<header>
+<table>
+<tr>
+<td>
+    <a href="https://www.facebook.com/PhotoArtNow/?modal=admin_todo_tour" target="_blank">
+        <img src="C:\Users\admin\Desktop\website\images\facebook group loga 2 exsample.jpg" alt="My facebook group" style="width: 95px; height: 100px; position: relative; left: 30px; bottom: -20px;">
+    </a>    
+</td>
+<td>
+<h1 style=" position: relative; left: 40px; top: 35px;">PhotoArt by besad</h1>
+</td>
+<td>
+        <div class="dropdown">
+            <a href="C:\Users\admin\Desktop\website\projects\first project\website2.html">
+                <button class="dropbtn buttoms">Home</button>
+            </a>
+        </div>    
+        
+        <div class="dropdown">
+                <button class="dropbtn buttoms">About</button>
+                <div class="dropdown-content">
+                  <a href="C:\Users\admin\Desktop\website\projects\first project\about.html">About me</a>
+                  <a href="C:\Users\admin\Desktop\website\projects\first project\aboutFB.html">About facebook group</a>
+                  
+                </div>
+        </div>   
+
+        <div class="dropdown">
+            <a href="C:\Users\admin\Desktop\website\projects\first project\contact.html">
+                <button class="dropbtn buttoms">Contact</button>
+            </a> 
+        </div>   
+
+        <div class="dropdown">
+                <button class="dropbtn buttoms">Gallery</button>
+                <div class="dropdown-content">
+                  <a href="C:\Users\admin\Desktop\website\projects\first project\Gallery.html">Gallery one</a>
+                  <a href="C:\Users\admin\Desktop\website\projects\first project\Gallery.html">Gallery two</a>
+                  <a href="C:\Users\admin\Desktop\website\projects\first project\Gallery.html">Gallery three</a>
+                </div>
+        </div>   
+</td>
+</tr>
+</table>
+<br>
+<hr color="black"; size="0,5px"; width="96.5%"; >
+</header>
+
+<div id="div" class="my gallery"> 
+    <h1>About Facebook page</h1>
+    
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        
+    <br>
+    
+</div>
+</body>
+
+
+</html>
